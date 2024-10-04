@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2,
+  "ingredient": {
+    "item": "minecraft:dirt"
+  },
+  "result": "minecraft:stone"
+}

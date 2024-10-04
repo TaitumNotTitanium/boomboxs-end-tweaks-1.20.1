@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bbxendtweaks:endzite"
+        }
+    },
+    "result": {
+        "item": "bbxendtweaks:endzite_block"
+    }
+}

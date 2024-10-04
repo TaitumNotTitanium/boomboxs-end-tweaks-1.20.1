@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "bbxendtweaks:refined_endzite_block"
+        }
+    ],
+    "result": {
+        "item": "bbxendtweaks:refined_endzite",
+        "count": 9
+    }
+}

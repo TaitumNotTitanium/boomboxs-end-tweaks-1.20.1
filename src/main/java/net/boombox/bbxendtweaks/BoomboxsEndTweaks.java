@@ -1,5 +1,8 @@
 package net.boombox.bbxendtweaks;
 
+import net.boombox.bbxendtweaks.Block.ModBlocks;
+import net.boombox.bbxendtweaks.item.ModItemGroups;
+import net.boombox.bbxendtweaks.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,5 +15,8 @@ public class BoomboxsEndTweaks implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("BOOM!");
+		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
+		ModBlocks.registerModBlocks();
 	}
 }
