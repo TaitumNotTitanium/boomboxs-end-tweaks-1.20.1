@@ -1,5 +1,6 @@
 package net.boombox.bbxendtweaks.Block;
 
+import net.boombox.bbxendtweaks.Block.custom.TestSongBlock;
 import net.boombox.bbxendtweaks.BoomboxsEndTweaks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -16,15 +17,21 @@ public class ModBlocks {
 
     public static final Block ENDZITE_BLOCK = registerBlock("endzite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)
-                    .mapColor(MapColor.EMERALD_GREEN)));
+                    .mapColor(MapColor.EMERALD_GREEN)
+                    .strength(60.0F)));
 
     public static final Block BUDDING_ENDZITE = registerBlock("budding_endzite",
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)
-                    .mapColor(MapColor.EMERALD_GREEN)));
+                    .mapColor(MapColor.EMERALD_GREEN)
+                    .strength(60.0F)));
 
     public static final Block REFINED_ENDZITE_BLOCK = registerBlock("refined_endzite_block",
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)
-                    .mapColor(MapColor.DIAMOND_BLUE)));
+                    .mapColor(MapColor.DIAMOND_BLUE)
+                    .strength(60.0F)));
+
+    public static final Block TEST_SONG_BLOCK = registerBlock("test_song_block",
+            new TestSongBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL)));
 
 
 

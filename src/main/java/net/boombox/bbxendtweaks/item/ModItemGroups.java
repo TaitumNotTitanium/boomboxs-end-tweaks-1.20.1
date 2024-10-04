@@ -22,6 +22,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ENDZITE_BLOCK);
                         entries.add(ModBlocks.REFINED_ENDZITE_BLOCK);
                         entries.add(ModBlocks.BUDDING_ENDZITE);
+                        entries.add(ModItems.LINKING_TOOL);
+                        entries.add(ModBlocks.TEST_SONG_BLOCK);
+                        entries.add(ModItems.END_GLOW_BERRIES);
+                        entries.add(ModItems.MUSIC_DISC_NOVAS_DREAM);
 
                     }).build());
 

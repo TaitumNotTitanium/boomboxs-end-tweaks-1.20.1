@@ -1,9 +1,16 @@
 {
   "item.bbxendtweaks.endzite_shard": "Endzite Shard",
   "item.bbxendtweaks.refined_endzite_shard": "Refined Endzite Shard",
+  "item.bbxendtweaks.linking_tool": "Linking Tool",
+  "tooltip.bbxendtweaks.linking_tool.tooltip": "§7Links two blocks together",
+  "item.bbxendtweaks.end_glow_berries": "End Glow Berries",
+  "item.bbxendtweaks.music_disc_novas_dream": "§bMusic Disc",
+  "item.bbxendtweaks.music_disc_novas_dream.desc": "Solare - Nova's Dream",
+
   "block.bbxendtweaks.endzite_block": "Endzite Block",
   "block.bbxendtweaks.budding_endzite": "Budding Endzite",
   "block.bbxendtweaks.refined_endzite_block": "Refined Endzite Block",
+  "block.bbxendtweaks.test_song_block": "Test Song Block",
 
   "itemgroup.endtweaks": "End Tweaks"
 }
