@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bbxendtweaks",
+	"version": "${version}",
+	"name": "Boombox's End Tweaks",
+	"description": "My first minecraft mod. Enjoy.",
+	"authors": [
+		"Boombox"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bbxendtweaks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.boombox.bbxendtweaks.BoomboxsEndTweaks"
+		],
+		"client": [
+			"net.boombox.bbxendtweaks.BoomboxsEndTweaksClient"
+		],
+		"fabric-datagen": [
+			"net.boombox.bbxendtweaks.BoomboxsEndTweaksDataGenerator"
+		]
+	},
+	"mixins": [
+		"bbxendtweaks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
