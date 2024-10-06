@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "bbxendtweaks:block/stripped_endzite_enriched_log_top",
+    "side": "bbxendtweaks:block/stripped_endzite_enriched_log"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "bbxendtweaks:endzite_shard"
+    },
+    "R": {
+      "item": "bbxendtweaks:refined_endzite_shard"
+    }
+  },
+  "pattern": [
+    "  B",
+    " R ",
+    "B  "
+  ],
+  "result": {
+    "item": "bbxendtweaks:linking_tool"
+  },
+  "show_notification": true
+}

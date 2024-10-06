@@ -29,12 +29,30 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ENDZITE_BLOCK)
                 .add(ModBlocks.REFINED_ENDZITE_BLOCK)
-                .add(ModBlocks.BUDDING_ENDZITE);
+                .add(ModBlocks.BUDDING_ENDZITE)
+                .add(ModBlocks.ENDZITE_CLUSTER);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.ENDZITE_BLOCK)
-                .add(ModBlocks.REFINED_ENDZITE_BLOCK)
-                .add(ModBlocks.BUDDING_ENDZITE);
+                .add(ModBlocks.BUDDING_ENDZITE)
+                .add(ModBlocks.ENDZITE_CLUSTER);
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
+                .add(ModBlocks.REFINED_ENDZITE_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.ENDZITE_ENRICHED_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ENDZITE_ENRICHED_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(ModBlocks.ENDZITE_ENRICHED_PLANKS);
+
+        getOrCreateTagBuilder(BlockTags.LOGS)
+                .add(ModBlocks.ENDZITE_ENRICHED_LOG)
+                .add(ModBlocks.ENDZITE_ENRICHED_WOOD)
+                .add(ModBlocks.STRIPPED_ENDZITE_ENRICHED_LOG)
+                .add(ModBlocks.STRIPPED_ENDZITE_ENRICHED_WOOD);
+
     }
 
 }

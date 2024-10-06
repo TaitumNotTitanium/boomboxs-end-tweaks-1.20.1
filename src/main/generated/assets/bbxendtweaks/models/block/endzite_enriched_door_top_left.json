@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "bbxendtweaks:block/endzite_enriched_door_bottom",
+    "top": "bbxendtweaks:block/endzite_enriched_door_top"
+  }
+}

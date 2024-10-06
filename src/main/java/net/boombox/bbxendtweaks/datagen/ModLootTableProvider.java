@@ -25,9 +25,27 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.TEST_SONG_BLOCK);
-        addDrop(ModBlocks.ENDZITE_BLOCK, endziteOreDrops(ModBlocks.ENDZITE_BLOCK, ModItems.ENDZITE_SHARD));
-        addDrop(ModBlocks.BUDDING_ENDZITE, endziteOreDrops(ModBlocks.ENDZITE_BLOCK, ModItems.ENDZITE_SHARD));
-        addDrop(ModBlocks.REFINED_ENDZITE_BLOCK, endziteOreDrops(ModBlocks.REFINED_ENDZITE_BLOCK, ModItems.REFINED_ENDZITE_SHARD));
+        addDrop(ModBlocks.ENDZITE_BLOCK);
+        addDrop(ModBlocks.BUDDING_ENDZITE, drops(ModBlocks.ENDZITE_BLOCK));
+        addDrop(ModBlocks.REFINED_ENDZITE_BLOCK);
+
+        addDrop(ModBlocks.ENDZITE_ENRICHED_PLANKS);
+        addDrop(ModBlocks.ENDZITE_ENRICHED_BUTTON);
+        addDrop(ModBlocks.ENDZITE_ENRICHED_FENCE);
+        addDrop(ModBlocks.ENDZITE_ENRICHED_STAIRS);
+        addDrop(ModBlocks.ENDZITE_ENRICHED_FENCE_GATE);
+        addDrop(ModBlocks.ENDZITE_ENRICHED_PRESSURE_PLATE);
+        addDrop(ModBlocks.ENDZITE_ENRICHED_TRAPDOOR);
+        addDrop(ModBlocks.ENDZITE_ENRICHED_DOOR, doorDrops(ModBlocks.ENDZITE_ENRICHED_DOOR));
+        addDrop(ModBlocks.ENDZITE_ENRICHED_SLAB, slabDrops(ModBlocks.ENDZITE_ENRICHED_SLAB));
+        addDrop((ModBlocks.ENDZITE_ENRICHED_LOG));
+        addDrop((ModBlocks.ENDZITE_ENRICHED_WOOD));
+        addDrop((ModBlocks.STRIPPED_ENDZITE_ENRICHED_LOG));
+        addDrop((ModBlocks.STRIPPED_ENDZITE_ENRICHED_WOOD));
+        addDrop(ModBlocks.ENDZITE_CLUSTER, endziteOreDrops(ModBlocks.ENDZITE_CLUSTER, ModItems.ENDZITE_SHARD));
+        addDrop(ModBlocks.LARGE_ENDZITE_BUD, dropsWithSilkTouch(ModBlocks.LARGE_ENDZITE_BUD));
+        addDrop(ModBlocks.MEDIUM_ENDZITE_BUD, dropsWithSilkTouch(ModBlocks.MEDIUM_ENDZITE_BUD));
+        addDrop(ModBlocks.SMALL_ENDZITE_BUD, dropsWithSilkTouch(ModBlocks.SMALL_ENDZITE_BUD));
     }
 
     public LootTable.Builder endziteOreDrops(Block block, Item item) {

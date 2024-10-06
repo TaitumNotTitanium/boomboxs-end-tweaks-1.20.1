@@ -19,6 +19,9 @@ public class ModTags {
     }
 
     public static class Items {
+
+        public static final TagKey<Item> ENRICHED_ENDZITE_LOG = createTag("enriched_endzite_log");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(BoomboxsEndTweaks.MOD_ID, name));
         }

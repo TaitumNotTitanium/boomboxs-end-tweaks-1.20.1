@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bbxendtweaks:endzite_enriched_log",
+    "bbxendtweaks:endzite_enriched_wood",
+    "bbxendtweaks:stripped_endzite_enriched_log",
+    "bbxendtweaks:stripped_endzite_enriched_wood"
+  ]
+}

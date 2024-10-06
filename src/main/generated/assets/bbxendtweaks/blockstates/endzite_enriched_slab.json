@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bbxendtweaks:block/endzite_enriched_slab"
+    },
+    "type=double": {
+      "model": "bbxendtweaks:block/endzite_enriched_planks"
+    },
+    "type=top": {
+      "model": "bbxendtweaks:block/endzite_enriched_slab_top"
+    }
+  }
+}

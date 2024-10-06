@@ -1,0 +1,9 @@
+// 1.20.1	2024-10-05T22:43:51.3125445	Boombox's End Tweaks/Tags for minecraft:block
+1d74933616c16fa4b836d23dcc7902c55fdd6527 data\fabric\tags\blocks\needs_tool_level_4.json
+96960d35fa02b8a903a520e62d4858770b12af88 data\minecraft\tags\blocks\planks.json
+8a5e4358ffbb76871b182778d66c861d243d704c data\minecraft\tags\blocks\mineable\pickaxe.json
+486e7be205b166d4a2c04c210e4a560e867d07ea data\bbxendtweaks\tags\blocks\end_glow_berries_placeable_on.json
+bedea6ff1def95c33496268f05a8408179269199 data\fabric\tags\blocks\needs_tool_level_5.json
+e14c36301c887624953e83735dba53b8f0f8b856 data\minecraft\tags\blocks\logs.json
+75d1745ee2c7115412c6d011d77c735f996bc051 data\minecraft\tags\blocks\wooden_fences.json
+4eadcadffdab7760d31dbf98b91ca06477043842 data\minecraft\tags\blocks\fence_gates.json

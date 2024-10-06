@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "bbxendtweaks:endzite_enriched_planks"
+    }
+  ],
+  "result": {
+    "item": "bbxendtweaks:endzite_enriched_button"
+  }
+}

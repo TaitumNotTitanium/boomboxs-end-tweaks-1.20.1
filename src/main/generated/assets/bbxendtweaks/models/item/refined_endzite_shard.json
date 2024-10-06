@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bbxendtweaks:item/refined_endzite_shard"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 1000,
+  "experience": 10.0,
+  "group": "refined_endzite_shard",
+  "ingredient": {
+    "item": "bbxendtweaks:endzite_shard"
+  },
+  "result": "bbxendtweaks:refined_endzite_shard"
+}

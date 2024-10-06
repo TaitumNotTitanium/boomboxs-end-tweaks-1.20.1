@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "bbxendtweaks:block/endzite_enriched_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "bbxendtweaks:block/endzite_enriched_wood"
+    },
+    "axis=z": {
+      "model": "bbxendtweaks:block/endzite_enriched_wood_horizontal",
+      "x": 90
+    }
+  }
+}

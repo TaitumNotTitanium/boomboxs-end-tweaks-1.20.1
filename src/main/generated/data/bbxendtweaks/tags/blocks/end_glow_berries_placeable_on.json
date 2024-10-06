@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bbxendtweaks:endzite_block",
+    "bbxendtweaks:refined_endzite_block",
+    "bbxendtweaks:budding_endzite",
+    "minecraft:end_stone"
+  ]
+}

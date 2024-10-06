@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "bbxendtweaks:block/endzite_enriched_planks",
+    "side": "bbxendtweaks:block/endzite_enriched_planks",
+    "top": "bbxendtweaks:block/endzite_enriched_planks"
+  }
+}

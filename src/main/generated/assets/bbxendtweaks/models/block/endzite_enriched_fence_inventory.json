@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "bbxendtweaks:block/endzite_enriched_planks"
+  }
+}
