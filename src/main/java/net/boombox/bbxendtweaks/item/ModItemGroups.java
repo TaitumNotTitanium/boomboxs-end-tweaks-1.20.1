@@ -21,8 +21,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BEANIUM_ORE);
                         entries.add(ModBlocks.DEEPSLATE_BEANIUM_ORE);
                         entries.add(ModItems.RAW_BEANIUM);
+                        entries.add(ModBlocks.BEANIUM_BLOCK);
                         entries.add(ModItems.BEANIUM_INGOT);
                         entries.add(ModItems.RAW_LOOCHIUM);
+                        entries.add(ModBlocks.LOOCHIUM_BLOCK);
                         entries.add(ModItems.LOOCHIUM_INGOT);
                         entries.add(ModBlocks.YUIUM_BLOCK);
                         entries.add(ModItems.YUIUM_INGOT);
@@ -30,6 +32,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.EUROPIUM_ORE);
                         entries.add(ModBlocks.DEEPSLATE_EUROPIUM_ORE);
                         entries.add(ModItems.RAW_EUROPIUM);
+                        entries.add(ModBlocks.EUROPIUM_BLOCK);
                         entries.add(ModItems.EUROPIUM_INGOT);
                         entries.add(ModItems.EMPTY_CAN);
                         entries.add(ModItems.CAN_OF_BEANS);

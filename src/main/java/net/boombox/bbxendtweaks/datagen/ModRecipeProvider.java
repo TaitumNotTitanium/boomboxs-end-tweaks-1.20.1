@@ -34,6 +34,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.ENDZITE_SHARD, RecipeCategory.MISC, ModBlocks.ENDZITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.REFINED_ENDZITE_SHARD, RecipeCategory.MISC, ModBlocks.REFINED_ENDZITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.YUIUM_INGOT, RecipeCategory.MISC, ModBlocks.YUIUM_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.EUROPIUM_INGOT, RecipeCategory.MISC, ModBlocks.EUROPIUM_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.BEANIUM_INGOT, RecipeCategory.MISC, ModBlocks.BEANIUM_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.LOOCHIUM_INGOT, RecipeCategory.MISC, ModBlocks.LOOCHIUM_BLOCK);
 
         offerBlasting(exporter, REFINED_ENDZITE_SHARD_BLASTABLES, RecipeCategory.MISC, ModItems.REFINED_ENDZITE_SHARD, 10, 1000, "refined_endzite_shard");
         offerBlasting(exporter, EUROPIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.EUROPIUM_INGOT, 10, 100, "europium_ingot");

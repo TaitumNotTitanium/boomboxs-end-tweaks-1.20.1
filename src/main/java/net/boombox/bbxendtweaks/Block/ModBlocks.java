@@ -33,6 +33,15 @@ public class ModBlocks {
     public static final Block YUIUM_BLOCK = registerBlock("yuium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)
                     .mapColor(MapColor.PALE_YELLOW)));
+    public static final Block BEANIUM_BLOCK = registerBlock("beanium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)
+                    .mapColor(MapColor.BROWN)));
+    public static final Block EUROPIUM_BLOCK = registerBlock("europium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)
+                    .mapColor(MapColor.BROWN)));
+    public static final Block LOOCHIUM_BLOCK = registerBlock("loochium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)
+                    .mapColor(MapColor.BROWN)));
 
     public static final Block ENDZITE_BLOCK = registerBlock("endzite_block",
             new AmethystBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)

@@ -35,16 +35,22 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_EUROPIUM_ORE)
                 .add(ModBlocks.YUIUM_BLOCK)
                 .add(ModBlocks.BEANIUM_ORE)
+                .add(ModBlocks.BEANIUM_BLOCK)
+                .add(ModBlocks.EUROPIUM_BLOCK)
+                .add(ModBlocks.LOOCHIUM_BLOCK)
                 .add(ModBlocks.DEEPSLATE_BEANIUM_ORE);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_2")))
                 .add(ModBlocks.BEANIUM_ORE)
-                .add(ModBlocks.DEEPSLATE_BEANIUM_ORE);
+                .add(ModBlocks.DEEPSLATE_BEANIUM_ORE)
+                .add(ModBlocks.LOOCHIUM_BLOCK)
+                .add(ModBlocks.BEANIUM_BLOCK);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_3")))
                 .add(ModBlocks.EUROPIUM_ORE)
                 .add(ModBlocks.DEEPSLATE_EUROPIUM_ORE)
-                .add(ModBlocks.YUIUM_BLOCK);
+                .add(ModBlocks.YUIUM_BLOCK)
+                .add(ModBlocks.EUROPIUM_BLOCK);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.ENDZITE_BLOCK)
