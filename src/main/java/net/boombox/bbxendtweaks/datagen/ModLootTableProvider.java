@@ -46,6 +46,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.LARGE_ENDZITE_BUD, dropsWithSilkTouch(ModBlocks.LARGE_ENDZITE_BUD));
         addDrop(ModBlocks.MEDIUM_ENDZITE_BUD, dropsWithSilkTouch(ModBlocks.MEDIUM_ENDZITE_BUD));
         addDrop(ModBlocks.SMALL_ENDZITE_BUD, dropsWithSilkTouch(ModBlocks.SMALL_ENDZITE_BUD));
+        addDrop(ModBlocks.EUROPIUM_ORE, oreDrops(ModBlocks.EUROPIUM_ORE, ModItems.RAW_EUROPIUM));
+        addDrop(ModBlocks.DEEPSLATE_EUROPIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_EUROPIUM_ORE, ModItems.RAW_EUROPIUM));
+        addDrop(ModBlocks.BEANIUM_ORE, oreDrops(ModBlocks.BEANIUM_ORE, ModItems.RAW_BEANIUM));
+        addDrop(ModBlocks.DEEPSLATE_BEANIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_BEANIUM_ORE, ModItems.RAW_BEANIUM));
+        addDrop(ModBlocks.YUIUM_BLOCK);
     }
 
     public LootTable.Builder endziteOreDrops(Block block, Item item) {

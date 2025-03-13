@@ -4,6 +4,11 @@
     "bbxendtweaks:endzite_block",
     "bbxendtweaks:refined_endzite_block",
     "bbxendtweaks:budding_endzite",
-    "bbxendtweaks:endzite_cluster"
+    "bbxendtweaks:endzite_cluster",
+    "bbxendtweaks:europium_ore",
+    "bbxendtweaks:deepslate_europium_ore",
+    "bbxendtweaks:yuium_block",
+    "bbxendtweaks:beanium_ore",
+    "bbxendtweaks:deepslate_beanium_ore"
   ]
 }

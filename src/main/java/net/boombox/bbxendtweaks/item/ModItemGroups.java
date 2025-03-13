@@ -17,6 +17,22 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.endtweaks"))
                     .icon( () -> new ItemStack(ModItems.ENDZITE_SHARD)).entries((displayContext, entries) -> {
 
+                        entries.add(ModItems.BOOMBOXIUM_INGOT);
+                        entries.add(ModBlocks.BEANIUM_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_BEANIUM_ORE);
+                        entries.add(ModItems.RAW_BEANIUM);
+                        entries.add(ModItems.BEANIUM_INGOT);
+                        entries.add(ModItems.RAW_LOOCHIUM);
+                        entries.add(ModItems.LOOCHIUM_INGOT);
+                        entries.add(ModBlocks.YUIUM_BLOCK);
+                        entries.add(ModItems.YUIUM_INGOT);
+                        entries.add(ModItems.THORIUM_INGOT);
+                        entries.add(ModBlocks.EUROPIUM_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_EUROPIUM_ORE);
+                        entries.add(ModItems.RAW_EUROPIUM);
+                        entries.add(ModItems.EUROPIUM_INGOT);
+                        entries.add(ModItems.EMPTY_CAN);
+                        entries.add(ModItems.CAN_OF_BEANS);
                         entries.add(ModItems.ENDZITE_HELMET);
                         entries.add(ModItems.ENDZITE_CHESTPLATE);
                         entries.add(ModItems.ENDZITE_LEGGINGS);

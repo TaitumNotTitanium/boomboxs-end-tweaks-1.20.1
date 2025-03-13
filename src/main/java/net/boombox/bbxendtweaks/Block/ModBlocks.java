@@ -16,6 +16,24 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
+    public static final Block EUROPIUM_ORE = registerBlock("europium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE)
+                    .mapColor(MapColor.DIAMOND_BLUE)));
+    public static final Block DEEPSLATE_EUROPIUM_ORE = registerBlock("deepslate_europium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)
+                    .mapColor(MapColor.DIAMOND_BLUE)));
+
+    public static final Block BEANIUM_ORE = registerBlock("beanium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE)
+                    .mapColor(MapColor.BROWN)));
+    public static final Block DEEPSLATE_BEANIUM_ORE = registerBlock("deepslate_beanium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)
+                    .mapColor(MapColor.BROWN)));
+
+    public static final Block YUIUM_BLOCK = registerBlock("yuium_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)
+                    .mapColor(MapColor.PALE_YELLOW)));
+
     public static final Block ENDZITE_BLOCK = registerBlock("endzite_block",
             new AmethystBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)
                     .mapColor(MapColor.EMERALD_GREEN)

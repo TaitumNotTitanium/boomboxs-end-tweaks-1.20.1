@@ -20,6 +20,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDZITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_ENDZITE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEST_SONG_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EUROPIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_EUROPIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BEANIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_BEANIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YUIUM_BLOCK);
 
         BlockStateModelGenerator.BlockTexturePool ENDZITE_ENRICHED_PLANKS_POOL = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ENDZITE_ENRICHED_PLANKS);
         ENDZITE_ENRICHED_PLANKS_POOL.button(ModBlocks.ENDZITE_ENRICHED_BUTTON);
@@ -38,6 +43,17 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.EMPTY_CAN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CAN_OF_BEANS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_LOOCHIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EUROPIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_BEANIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_EUROPIUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BOOMBOXIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LOOCHIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BEANIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.YUIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THORIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.REFINED_ENDZITE_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDZITE_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.END_GLOW_BERRIES, Models.GENERATED);

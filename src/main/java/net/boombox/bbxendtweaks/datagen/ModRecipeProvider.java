@@ -21,6 +21,9 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends FabricRecipeProvider {
 
     private static final List<ItemConvertible> REFINED_ENDZITE_SHARD_BLASTABLES = List.of(ModItems.ENDZITE_SHARD);
+    private static final List<ItemConvertible> EUROPIUM_INGOT_BLASTABLES = List.of(ModItems.RAW_EUROPIUM, ModBlocks.EUROPIUM_ORE, ModBlocks.DEEPSLATE_EUROPIUM_ORE);
+    private static final List<ItemConvertible> BEANIUM_INGOT_BLASTABLES = List.of(ModItems.RAW_BEANIUM, ModBlocks.BEANIUM_ORE, ModBlocks.DEEPSLATE_BEANIUM_ORE);
+    private static final List<ItemConvertible> LOOCHIUM_INGOT_BLASTABLES = List.of(ModItems.RAW_LOOCHIUM);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -30,8 +33,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.ENDZITE_SHARD, RecipeCategory.MISC, ModBlocks.ENDZITE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.REFINED_ENDZITE_SHARD, RecipeCategory.MISC, ModBlocks.REFINED_ENDZITE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.YUIUM_INGOT, RecipeCategory.MISC, ModBlocks.YUIUM_BLOCK);
 
         offerBlasting(exporter, REFINED_ENDZITE_SHARD_BLASTABLES, RecipeCategory.MISC, ModItems.REFINED_ENDZITE_SHARD, 10, 1000, "refined_endzite_shard");
+        offerBlasting(exporter, EUROPIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.EUROPIUM_INGOT, 10, 100, "europium_ingot");
+        offerBlasting(exporter, LOOCHIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.LOOCHIUM_INGOT, 10, 100, "loochium_ingot");
+        offerBlasting(exporter, BEANIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.BEANIUM_INGOT, 10, 100, "beanium_ingot");
+        offerSmelting(exporter, EUROPIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.EUROPIUM_INGOT, 10, 200, "europium_ingot");
+        offerSmelting(exporter, LOOCHIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.LOOCHIUM_INGOT, 10, 200, "loochium_ingot");
+        offerSmelting(exporter, BEANIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.BEANIUM_INGOT, 10, 200, "beanium_ingot");
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LINKING_TOOL, 1)
                 .pattern("  B")
@@ -83,11 +93,25 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.REFINED_ENDZITE_SHARD), conditionsFromItem(ModItems.REFINED_ENDZITE_SHARD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ENDZITE_HOE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.EMPTY_CAN, 1)
+                .pattern("IBI")
+                .pattern(" I ")
+                .input('I', Items.IRON_INGOT)
+                .input('B', Items.GLASS_BOTTLE)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.EMPTY_CAN)));
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MUSIC_DISC_NOVAS_DREAM, 1)
                 .input(ModItems.REFINED_ENDZITE_SHARD)
                 .input(ItemTags.MUSIC_DISCS)
                 .criterion(hasItem(ModItems.REFINED_ENDZITE_SHARD), conditionsFromItem(ModItems.REFINED_ENDZITE_SHARD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.MUSIC_DISC_NOVAS_DREAM)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CAN_OF_BEANS, 1)
+                .input(ModItems.EMPTY_CAN)
+                .input(ModItems.BEANIUM_INGOT)
+                .criterion(hasItem(ModItems.EMPTY_CAN), conditionsFromItem(ModItems.EMPTY_CAN))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CAN_OF_BEANS)));
 
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ENDZITE_ENRICHED_SLAB, ModBlocks.ENDZITE_ENRICHED_PLANKS);
         offerPressurePlateRecipe(exporter, ModBlocks.ENDZITE_ENRICHED_PRESSURE_PLATE, ModBlocks.ENDZITE_ENRICHED_PLANKS);

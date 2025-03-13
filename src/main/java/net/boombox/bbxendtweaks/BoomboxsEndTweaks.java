@@ -4,6 +4,7 @@ import net.boombox.bbxendtweaks.Block.ModBlocks;
 import net.boombox.bbxendtweaks.item.ModItemGroups;
 import net.boombox.bbxendtweaks.item.ModItems;
 import net.boombox.bbxendtweaks.sound.ModSounds;
+import net.boombox.bbxendtweaks.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,5 +21,6 @@ public class BoomboxsEndTweaks implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
+		ModWorldGeneration.generateModWorldGen();
 	}
 }
