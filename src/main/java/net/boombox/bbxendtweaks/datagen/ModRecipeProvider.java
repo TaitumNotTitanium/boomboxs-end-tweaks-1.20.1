@@ -24,6 +24,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> EUROPIUM_INGOT_BLASTABLES = List.of(ModItems.RAW_EUROPIUM, ModBlocks.EUROPIUM_ORE, ModBlocks.DEEPSLATE_EUROPIUM_ORE);
     private static final List<ItemConvertible> BEANIUM_INGOT_BLASTABLES = List.of(ModItems.RAW_BEANIUM, ModBlocks.BEANIUM_ORE, ModBlocks.DEEPSLATE_BEANIUM_ORE);
     private static final List<ItemConvertible> LOOCHIUM_INGOT_BLASTABLES = List.of(ModItems.RAW_LOOCHIUM);
+    private static final List<ItemConvertible> BARREL_INGOT_BLASTABLES = List.of(Items.BARREL);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -42,9 +43,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, EUROPIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.EUROPIUM_INGOT, 10, 100, "europium_ingot");
         offerBlasting(exporter, LOOCHIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.LOOCHIUM_INGOT, 10, 100, "loochium_ingot");
         offerBlasting(exporter, BEANIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.BEANIUM_INGOT, 10, 100, "beanium_ingot");
+        offerBlasting(exporter, BARREL_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.BARREL_INGOT, 10, 100, "barrel_ingot");
         offerSmelting(exporter, EUROPIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.EUROPIUM_INGOT, 10, 200, "europium_ingot");
         offerSmelting(exporter, LOOCHIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.LOOCHIUM_INGOT, 10, 200, "loochium_ingot");
         offerSmelting(exporter, BEANIUM_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.BEANIUM_INGOT, 10, 200, "beanium_ingot");
+        offerSmelting(exporter, BARREL_INGOT_BLASTABLES, RecipeCategory.MISC, ModItems.BARREL_INGOT, 10, 200, "barrel_ingot");
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LINKING_TOOL, 1)
                 .pattern("  B")

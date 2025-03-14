@@ -46,6 +46,9 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.BOTTOMLESS_CAN_OF_BEANS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FRISKIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BARREL_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMPTY_CAN, Models.GENERATED);
         itemModelGenerator.register(ModItems.CAN_OF_BEANS, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_LOOCHIUM, Models.GENERATED);
@@ -68,6 +71,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ENDZITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENDZITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENDZITE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BEANIUM_PICKAXE, Models.HANDHELD);
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDZITE_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDZITE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDZITE_LEGGINGS));

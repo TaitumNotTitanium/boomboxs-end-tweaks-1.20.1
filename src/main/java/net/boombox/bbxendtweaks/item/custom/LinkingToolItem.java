@@ -20,15 +20,11 @@ public class LinkingToolItem extends Item {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-
         if(!context.getWorld().isClient()) {
             BlockPos positionClicked = context.getBlockPos();
             PlayerEntity player = context.getPlayer();
-
             player.sendMessage(Text.literal("Block: " + context.getWorld().getBlockState(positionClicked).getBlock().asItem().getName().getString()));
-
         }
-
         return ActionResult.SUCCESS;
     }
 

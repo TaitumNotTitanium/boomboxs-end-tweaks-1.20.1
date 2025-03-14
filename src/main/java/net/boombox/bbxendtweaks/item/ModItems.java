@@ -2,6 +2,7 @@ package net.boombox.bbxendtweaks.item;
 
 import net.boombox.bbxendtweaks.BoomboxsEndTweaks;
 import net.boombox.bbxendtweaks.item.custom.CannedFoodItem;
+import net.boombox.bbxendtweaks.item.custom.InfiniteFoodItem;
 import net.boombox.bbxendtweaks.item.custom.LinkingToolItem;
 import net.boombox.bbxendtweaks.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -13,8 +14,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
+    public static final Item FRISKIUM_INGOT = registerItem("friskium_ingot", new Item(new FabricItemSettings()));
+    public static final Item BARREL_INGOT = registerItem("barrel_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_LOOCHIUM = registerItem("raw_loochium", new Item(new FabricItemSettings()));
     public static final Item RAW_EUROPIUM = registerItem("raw_europium", new Item(new FabricItemSettings()));
+    public static final Item BOTTOMLESS_CAN_OF_BEANS = registerItem("bottomless_can_of_beans", new InfiniteFoodItem(new FabricItemSettings().food(ModFoodComponents.CAN_OF_BEANS).maxCount(1)));
     public static final Item EUROPIUM_INGOT = registerItem("europium_ingot", new Item(new FabricItemSettings()));
     public static final Item BOOMBOXIUM_INGOT = registerItem("boomboxium_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_BEANIUM = registerItem("raw_beanium", new Item(new FabricItemSettings()));
@@ -34,6 +38,7 @@ public class ModItems {
 
     public static final Item ENDZITE_SWORD = registerItem("endzite_sword", new SwordItem(ModToolMaterial.ENDZITE, 3, -2.4f, new FabricItemSettings().maxCount(1)));
     public static final Item ENDZITE_PICKAXE = registerItem("endzite_pickaxe", new PickaxeItem(ModToolMaterial.ENDZITE, 1, -2.8f, new FabricItemSettings().maxCount(1)));
+    public static final Item BEANIUM_PICKAXE = registerItem("beanium_pickaxe", new PickaxeItem(ModToolMaterial.BEANIUM, 1, -2.8f, new FabricItemSettings().maxCount(1)));
     public static final Item ENDZITE_SHOVEL = registerItem("endzite_shovel", new ShovelItem(ModToolMaterial.ENDZITE, 1, -3f, new FabricItemSettings().maxCount(1)));
     public static final Item ENDZITE_AXE = registerItem("endzite_axe", new AxeItem(ModToolMaterial.ENDZITE, 5, -3f, new FabricItemSettings().maxCount(1)));
     public static final Item ENDZITE_HOE = registerItem("endzite_hoe", new HoeItem(ModToolMaterial.ENDZITE, -4, 0f, new FabricItemSettings().maxCount(1)));

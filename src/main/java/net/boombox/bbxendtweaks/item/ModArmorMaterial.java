@@ -10,8 +10,7 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
-    ENDZITE("endzite", 40, new int[] {4, 8, 7, 4}, 17, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.5f, 0.15f, () -> Ingredient.ofItems(ModItems.ENDZITE_SHARD))
-    ;
+    ENDZITE("endzite", 40, new int[] {4, 8, 7, 4}, 17, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.5f, 0.15f, () -> Ingredient.ofItems(ModItems.ENDZITE_SHARD));
 
     private final String name;
     private final int durabilityMultiplier;

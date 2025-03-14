@@ -16,6 +16,10 @@ public class CannedFoodItem extends Item {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        return user instanceof PlayerEntity ? ItemUsage.exchangeStack(stack, (PlayerEntity)user, new ItemStack(ModItems.EMPTY_CAN)) : new ItemStack(ModItems.EMPTY_CAN);
+        if(user instanceof PlayerEntity){
+            ((PlayerEntity)user).eatFood(world, stack.copy());
+            return ItemUsage.exchangeStack(stack, (PlayerEntity)user, new ItemStack(ModItems.EMPTY_CAN));
+        }
+        return new ItemStack(ModItems.EMPTY_CAN);
     }
 }
